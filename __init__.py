@@ -1,15 +1,25 @@
 """
-Pakistan Legal AI - Scrapers Package
-====================================
-Web scrapers for Pakistani legal documents.
+Pakistan Legal AI - Utilities Package
+=====================================
+Utility functions and constants.
 """
 
-from .pakistan_code import PakistanCodeScraper
-from .na_gov import NationalAssemblyScraper
-from .provincial import ProvincialLawsScraper
+from .constants import (
+    LEGAL_CATEGORIES,
+    COURT_HIERARCHY,
+    LEGAL_TERMS_GLOSSARY
+)
+from .validators import (
+    validate_query,
+    validate_file_upload,
+    validate_language_code
+)
 
 __all__ = [
-    'PakistanCodeScraper',
-    'NationalAssemblyScraper',
-    'ProvincialLawsScraper'
+    'LEGAL_CATEGORIES',
+    'COURT_HIERARCHY',
+    'LEGAL_TERMS_GLOSSARY',
+    'validate_query',
+    'validate_file_upload',
+    'validate_language_code'
 ]
