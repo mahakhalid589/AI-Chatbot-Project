@@ -1,17 +1,15 @@
 """
-Pakistan Legal AI - Models Package
-==================================
-Core models for the legal assistant.
+Pakistan Legal AI - Scrapers Package
+====================================
+Web scrapers for Pakistani legal documents.
 """
 
-from .language_processor import LanguageProcessor
-from .legal_retriever import LegalRetriever
-from .document_processor import DocumentProcessor
-from .voice_processor import VoiceProcessor
+from .pakistan_code import PakistanCodeScraper
+from .na_gov import NationalAssemblyScraper
+from .provincial import ProvincialLawsScraper
 
 __all__ = [
-    'LanguageProcessor',
-    'LegalRetriever',
-    'DocumentProcessor',
-    'VoiceProcessor'
+    'PakistanCodeScraper',
+    'NationalAssemblyScraper',
+    'ProvincialLawsScraper'
 ]
